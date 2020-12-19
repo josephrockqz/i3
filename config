@@ -195,3 +195,20 @@ bindsym Mod4+Shift+x exec /home/joe/.scripts/lockscreen/lock.sh
 
 # Screenshot
 bindsym Mod4+Shift+p exec scrot ~/Pictures/screenshot.png
+
+# Brightness
+bindsym $mod+u exec ~/.scripts/decr_bright.sh
+bindsym $mod+i exec ~/.scripts/incr_bright.sh
+
+# Enable/disable caps mode
+mode "caps" {
+        bindsym Caps_Lock mode "default"
+}
+bindsym Caps_Lock mode "caps"
+
+# Enable/disable numeric keyboard 
+mode "num" {
+        bindsym Num_Lock mode "default"
+}
+bindsym Num_Lock mode "num"
+
